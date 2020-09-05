@@ -1,0 +1,7 @@
+<!--logs.wxml-->
+<view class="container log-list">
+ <button bindtap="tete">测试</button>
+ <form report-submit="true" bindsubmit="tete2" >
+  <button formType="submit">Submit</button>
+ </form>
+</view>

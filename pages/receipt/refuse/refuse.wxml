@@ -1,0 +1,15 @@
+<view class="domain">
+拒绝原因
+</view>
+<view class="receiptBtnBox">
+  <button class="{{isChoose1 ? 'btnStyle_2':'btnStyle_1'}}" bindtap="fullCostmer"  >客满拒绝</button>
+  <button class="{{isChoose2 ? 'btnStyle_2':'btnStyle_1'}}" bindtap="otherResean" >其他原因</button>
+</view>
+<view class='textarea-Style' wx:if="{{isChoose2}}">
+   <textarea placeholder='请输入拒绝原因' value='{{contentStr}}' bindinput="getWords" maxlength='{{maxTextLen}}'></textarea>
+   <view class='contentNumStyle'>{{textLen}}/{{maxTextLen}}</view>
+ </view>
+ <view class="add-wrap">
+  <button class='Scancode' bindtap='refuseOk'>确认</button>
+</view>
+ 

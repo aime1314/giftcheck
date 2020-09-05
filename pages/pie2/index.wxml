@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="piecontainer">
+    <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}" bind:init="echartInit"></ec-canvas>
+    <view class="myorderSize">
+       <text class="orderNumber">今天</text>
+       <text class="orderNumber">总订单</text>
+       <text class="orderNumber showNumber">22</text>
+    </view>
+</view>
+

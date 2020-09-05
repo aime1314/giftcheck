@@ -1,0 +1,55 @@
+/* pages/order/order.wxss */
+@import "../../common/common.wxss";
+
+page{
+  background: #f3f3f3; padding-top: 7rem;
+}
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: .96rem;
+    background: #fff; 
+    position: fixed; left: 0; top: 0;
+    z-index: 10
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#999;position: relative;
+}
+.searchBoxFixed{position: fixed; left: 0; top: 3rem;z-index: 10}
+.active{
+    color:#333;
+    font-size: .96rem;
+    font-weight: bold;
+}
+.active::after{
+  content: " ";
+  display: inline-block;
+  width: 1.6rem; height: .1rem;
+   background: -webkit-linear-gradient(left, #ff974c, #ff6b00);
+  background: -o-linear-gradient(left, #ff974c, #ff6b00);
+  background: -moz-linear-gradient(left, #ff974c, #ff6b00);
+  background: linear-gradient(left, #ff974c, #ff6b00);
+  position: absolute;
+  bottom: .2rem;
+  left: 50%;
+  margin-left: -.8rem;
+  z-index: 2
+}
+.domain{
+ margin: 1rem;
+  background: #fff;
+  padding: 1rem 0;
+  border-radius: .5rem;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}

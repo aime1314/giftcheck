@@ -1,0 +1,29 @@
+<view class='bodyshow'>
+  <view class='loginBox'>
+  <form bindsubmit="merchantLogin" >
+    <view class='loginmsg'>
+      <view class="systemName">
+        <image src='https://cdn.icolourful.cn/wechat/mini/merchant/Logo.png' class='systemLogo'></image>
+        客乐芙商户通
+      </view>
+      <view class='bussinessmsgBox'>
+        <view class='systemInput'>
+          <input  auto-focus placeholder="请输入账户名" placeholder-class="phClass" name="username" />
+        </view>
+        <view class='systemInput'>
+          <input password placeholder="密码" placeholder-class="phClass" name="password"/>
+        </view>
+        <view>
+          <button class='btnStyle_f60'  formType="submit">登陆</button>
+        </view>
+      </view>
+    </view>
+    <view class='friendBox'>———— 合作银行 ————
+      <image src='https://cdn.icolourful.cn/wechat/mini/merchant/bank-logo.png' mode="aspectFit" style="height:275px;"></image>
+      </view>
+      <view class='friendBox' style="padding-bottom:1rem;">———— 官方指定服务商 ————
+      <image src='https://cdn.icolourful.cn/wechat/mini/merchant/institution_logo.png' mode="aspectFit" style="height:45px;"></image>
+      </view>
+    </form>
+  </view>
+</view>

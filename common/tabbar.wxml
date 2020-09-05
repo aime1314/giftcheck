@@ -1,0 +1,17 @@
+<template name="tabpageshow">
+    <view class="boxMode tabpageshow">
+        <view data-key='1' class="tabpageName {{tabBartype==1?'curron':''}}" bindtap="gotopage" hover-class=" ">
+          <view></view>
+          核销管理
+        </view>
+        <view data-key='2' class="tabpageName {{tabBartype==2?'curron':''}}" bindtap="gotopage" hover-class=" ">
+          <view wx:if="{{ receiptNum >0}}"><text class="receiptNumtips">{{receiptNum}}</text></view>
+          <view wx:if="{{ receiptNum == 0 || !receiptNum }}"><text class="receiptNumtipsNo"></text></view>
+          自主接单
+        </view>
+        <view data-key='3' class="tabpageName {{tabBartype==3?'curron':''}}" bindtap="gotopage" hover-class=" ">
+          <view></view>
+          订单中心
+        </view>
+    </view>
+</template>

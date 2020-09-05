@@ -1,0 +1,16 @@
+<view class="setBox">
+  <!-- <view  hover-class=" "  class="boxMode bussinessBox">
+    <view >消息设置</view>
+    <view>
+      <view><switch name="switch"/></view>
+    </view>
+  </view> -->
+
+    <navigator url="password" hover-class=" "  class="boxMode bussinessBox">
+      <view>修改密码</view>  
+      <view class="navigator-arrow"></view>
+    </navigator>
+  <view class="loginOutBox">
+    <button class="btnStyle_f60" hover-class=" " bindtap="loginOut">退出并解绑</button>
+  </view>
+</view>

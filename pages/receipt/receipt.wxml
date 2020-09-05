@@ -1,0 +1,61 @@
+<!--pages/receipt/receipt.wxml-->
+<import src="../../common/nodata.wxml" />
+<view>
+    <view class="searchBox">
+      <view class="inputBox"><input placeholder-class="phClass" bindinput="searchList" placeholder="手机号和订单号"></input></view>
+  </view>
+
+  <view wx:for="{{receiptList}}" wx:key="key">
+  <view class="domain">
+        <view class="boxMode couponNum">
+          <view>
+            订单号：{{item.orderId}}
+          </view>
+          <view class="orderStatus">待确认</view>
+        </view>
+        <view class="couponMsglit">
+          <view class="boxMode listMsgshow">
+            <view>产品名称</view>
+            <view>{{item.gift}}（{{item.item}}）</view>
+          </view>
+
+          <view class="boxMode listMsgshow">
+            <view>预订时间</view>
+            <view>{{item.bookDate}} {{item.bookTime}}</view>
+          </view>
+
+          <view class="boxMode listMsgshow">
+            <view>预订人数</view>
+            <view>{{item.people}}人</view>
+          </view>
+
+          <view class="boxMode listMsgshow">
+            <view>预订人</view>
+            <view>{{item.bookName}}</view>
+          </view>
+
+          <view class="boxMode listMsgshow">
+            <view>手机号</view>
+            <view>{{item.bookPhone}}</view>
+          </view>
+
+          <view class="boxMode listMsgshow">
+            <view>客户来源</view>
+            <view wx:if="{{item.bank != null }}"> {{item.bank}} </view>
+          </view>
+
+          <view class="boxMode listMsgshow">
+            <view>订单备注</view>
+            <view wx:if="{{item.note != null }}"> {{item.note}} </view>
+          </view>
+
+          <view class="receiptBtnBox">
+            <button class="btnStyle_bor_ccc" bindtap="couponRefruse" data-dataSource="{{item.dataSource}}" id="{{item.orderId}}" >拒绝</button>
+            <button class="btnStyle_f60" bindtap="couponOk" data-dataSource="{{item.dataSource}}" id="{{item.orderId}}">接受</button>
+          </view>
+        </view>
+      </view>
+      
+</view>
+ <view wx:if="{{receiptList == null }}"><template is="nodata" /></view>
+</view>

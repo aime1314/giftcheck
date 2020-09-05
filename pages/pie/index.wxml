@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view class="piecontainer">
+    <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}" bind:init="echartInit"></ec-canvas>
+    <view class="myorderSize">
+       <text class="orderNumber">今天</text>
+       <text class="orderNumber">总订单</text>
+       <text class="orderNumber showNumber">22</text>
+    </view>
+    <view class="orderListBox">
+        <view class="orderListshow">
+          <text><text class="lineshow"></text>20%</text>
+          <text>55</text>
+        </view>
+        <view class="orderListshow">
+          <text><text class="lineshow"></text>20%</text>
+          <text>55</text>
+        </view>
+        <view class="orderListshow2">
+          <text><text class="lineshow"></text>20%</text>
+          <text>55</text>
+          </view>
+        <view class="orderListshow2">
+          <text><text class="lineshow"></text>20%</text>
+          <text>55</text>
+        </view>
+    </view>
+</view>
+
+<view class="myorderBoxshow">
+  <view class="typeListBox">
+    <view>
+      <text class="typeTips"></text>今日核销订单：
+    </view>
+    <view class="typeNumber">
+      4
+    </view>
+  </view>
+
+<view class="typeListBox">
+    <view>
+      <text class="typeTips"></text>今日待核销订单：
+    </view>
+    <view class="typeNumber">
+      8
+    </view>
+  </view>
+
+
+  <view class="typeListBox">
+    <view>
+      <text class="typeTips"></text>本周核销总量：
+    </view>
+    <view class="typeNumber">
+      10
+    </view>
+  </view>
+
+  <view class="typeListBox">
+    <view>
+      <text class="typeTips"></text>本月核销总量：
+    </view>
+    <view class="typeNumber">
+      165
+    </view>
+  </view>
+
+
+
+</view>
+

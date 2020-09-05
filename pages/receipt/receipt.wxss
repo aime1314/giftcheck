@@ -1,0 +1,12 @@
+/* pages/receipt/receipt.wxss */
+@import "../../common/common.wxss";
+page{background: #f3f3f3;}
+.domain{
+ margin: 1rem;
+  background: #fff;
+  padding: 1rem 0;
+  border-radius: .5rem;
+}
+.receiptBtnBox{text-align: right; padding-top: 1rem;}
+.receiptBtnBox button{width: 6rem; display: inline-block; height: 2.4rem; line-height: 2.4rem; font-size: .95rem; margin: 0 .5rem; border-radius:1.2rem;}
+.receiptBtnBox button::after{border:none}

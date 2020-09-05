@@ -1,0 +1,31 @@
+page{background: #f3f3f3;}
+
+ec-canvas {
+  width: 100%;
+  height: 155rpx;
+}
+.piecontainer {
+  height: 255rpx;
+  position: relative;
+  width:95%;
+  border-radius:20rpx;
+  overflow: hidden;
+  margin: 10rpx auto;
+}
+.myorderSize{position: absolute; width: 100rpx; left:110rpx; top: 65rpx; height: 100rpx; font-size: 24rpx; color: #999;}
+.orderNumber{display:block; text-align: center;}
+.showNumber{font-size: 34rpx; font-weight: bold; color:#333;}
+
+.orderListBox{position: absolute; right: 50rpx; top: 25rpx; width: 180rpx; height: 100rpx;}
+.orderListBox .orderListshow{display: flex; justify-content: space-between;font-size: 24rpx; color: #999; line-height: 48rpx; padding-left: 20rpx;}
+.orderListBox .orderListshow2{display: flex; justify-content: space-between;font-size: 24rpx; color: #999; line-height: 48rpx;}
+.orderListBox .lineshow{display: inline-block; width: 15rpx; border-left: solid 2rpx #999; height: 18rpx;}
+
+.myorderBoxshow{ background: #fff; border-radius:20rpx; width: 95.6%; clear: both; overflow: hidden; margin: 20rpx auto; font-size: 26rpx; color: #999;display: flex; justify-content:flex-start;flex-direction: row; flex-wrap: wrap; padding: 10rpx 0;}
+.typeListBox{display: flex; justify-content:space-between; flex: 1; width: 43%;max-width: 43%; min-width: 43%; padding: 10rpx 20rpx;}
+.typeListBox .typeTips{display:inline-block; vertical-align: middle;  width: 10rpx; height: 10rpx; border-radius: 5rpx; margin-right: 10rpx;}
+.typeListBox:nth-of-type(1) .typeTips{ background: #4ECB73;}
+.typeListBox:nth-of-type(2) .typeTips{ background: #FF6B00;}
+.typeListBox:nth-of-type(3) .typeTips{ background: #FF6B00;}
+.typeListBox:nth-of-type(4) .typeTips{ background: #2C95FF;}
+.typeListBox .typeNumber{color: #333; font-size: 30rpx;}

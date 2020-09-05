@@ -1,0 +1,8 @@
+/* pages/setting/setting.wxss */
+@import "../../common/common.wxss";
+.bussinessBox{
+    border-bottom: solid .02rem #efefef;
+    padding: .8rem .5rem .8rem 0;
+}
+.setBox{padding-left: 1.2rem;}
+.loginOutBox{position: absolute;  left: 5%; bottom: 18%; width: 90%;}

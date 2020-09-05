@@ -1,0 +1,117 @@
+<!--pages/coupon/surecoupon.wxml-->
+<import src="../../common/tabbar.wxml" />
+<view class="couponMsgBox">
+  <view class="couponNum">
+    订单号：{{verifiInfo.id}}
+  </view>
+  <view class="couponMsglit">
+  <form report-submit="true"  bindsubmit="sureCoupon">
+    <view class="boxMode listMsgshow">
+      <view>产品名称</view>
+      <view wx:if="{{!isCpn}}">{{verifiInfo.giftTypeName}}({{verifiInfo.shopItemName}})</view>
+      <view wx:else>{{verifiInfo.shopItemName}}</view>
+    </view>
+
+    <view class="boxMode listMsgshow" wx:if="{{!isCpn}}">
+      <view>预订时间</view>
+      <view>{{verifiInfo.giftDate}} {{verifiInfo.giftTime}}</view>
+    </view>
+
+    <view class="boxMode listMsgshow" wx:if="{{!isCpn}}">
+      <view>预订人数</view>
+      <view>{{verifiInfo.giftPeopleNum}}人</view>
+    </view>
+
+    <view class="boxMode listMsgshow">
+      <view wx:if="{{!isCpn}}">预订人</view>
+      <view wx:else>兑换人</view>
+      <view>{{verifiInfo.giftName}}</view>
+    </view>
+
+    <view class="boxMode listMsgshow">
+      <view>手机号</view>
+      <view>{{verifiInfo.giftPhone}}</view>
+    </view>
+
+    <view class="boxMode listMsgshow">
+      <view>客户来源</view>
+      <view>{{!!verifiInfo.hotelName?verifiInfo.hotelName:''}}</view>
+    </view>
+
+    <view class="boxMode listMsgshow">
+      <view wx:if="{{!isCpn}}">订单备注</view>
+      <view>{{verifiInfo.reservRemark?verifiInfo.reservRemark:''}}</view>
+    </view>
+
+    <view class="boxMode listMsgshow" style="margin-top:.8rem;">
+      <view>核销码</view>
+      <view>{{verifiInfo.varCode}}</view>
+    </view>
+
+    <view class="boxMode listMsgshow">
+      <view>核销状态</view>
+      <view>{{statusText}}</view>
+    </view>
+
+    <view class="boxMode listMsgshow" style="margin-top:.8rem;">
+      <view>结算金额</view>
+      <view>{{!!verifiInfo.shopAmount?verifiInfo.shopAmount:0}}元</view>
+    </view>
+
+    <view class="boxMode couoponTip" style="margin-top:.8rem;"  wx:if="{{showNum!=''}}">
+      <view class="icon_Tips" style="margin-top:.2rem;"></view>
+      <view>温馨提示：本核销码可减免{{showNum}}人餐费，超出部分需客户自行支付</view>
+    </view>
+    <button class="btnStyle_f60"  formType="submit">确认核销</button>
+    </form>
+  </view>
+
+
+
+  <view class="maskDiv" wx:if='{{showdailog}}'>
+    <view class="dailogBox">
+      <view class="dailogTitle">核销成功</view>
+      <view class="dailogMsglist">
+        <view class="boxMode listMsgshow">
+          <view>产品名称</view>
+          <view>{{verifiInfo.giftTypeName}}({{verifiInfo.shopItemName}})</view>
+        </view>
+
+        <view class="boxMode listMsgshow">
+          <view wx:if="{{!isCpn}}">预订时间</view>
+          <view wx:else>兑换时间</view>
+          <view>{{verifiInfo.giftDate}} {{verifiInfo.giftTime}}</view>
+        </view>
+
+        <view class="boxMode listMsgshow">
+          <view wx:if="{{!isCpn}}">预订人</view>
+          <view wx:else>兑换人</view>
+          <view>{{verifiInfo.giftName}}</view>
+        </view>
+
+        <view class="boxMode listMsgshow" style="margin-top:.8rem;">
+          <view>核销码</view>
+          <view>{{verifiInfo.varCode}}</view>
+        </view>
+
+        <view class="boxMode listMsgshow">
+          <view>核销时间</view>
+          <view>{{verifiDate}}</view>
+        </view>
+
+        <view class="boxMode listMsgshow" style="margin-top:.8rem;">
+          <view>结算金额</view>
+          <view>{{!!verifiInfo.shopAmount?verifiInfo.shopAmount:0}}元</view>
+        </view>
+
+      </view>
+
+      <view class="dailogBtnBox">
+        <button  bindtap="closeCoupon">确定</button>
+      </view>
+
+      <view class="closeDailog" bindtap="closeCoupon"></view> 
+    </view>
+  </view>
+</view>
+<template is="tabpageshow" data="{{tabBartype,receiptNum}}" />

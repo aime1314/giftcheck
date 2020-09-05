@@ -1,0 +1,7 @@
+<!--common/nodata.wxml-->
+<template name="nodata">
+  <view style="text-align:center; padding:10rem 0; font-size:.8rem; line-height:3rem; color:#999;">
+    <image src="https://cdn.icolourful.cn/wechat/mini/merchant/No-order.png" style="width:3rem; height:3.6rem; display:block; margin:0 auto;"></image>
+    未搜索到相关订单
+  </view>
+</template>

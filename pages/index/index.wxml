@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view>
+  <view class="bussinessMsgBox">
+    <navigator url="/pages/setting/setting" class="bussinessSet" ><image src="https://cdn.icolourful.cn/wechat/mini/merchant/setting.png"></image></navigator>
+    <view class="bussinessMsg">
+      <text class="hotelName">{{shopInfo.hotelName}}</text>
+      <text class="hotelType">{{shopInfo.name}}</text>
+      <text class="hotelUser">你好，{{shopInfo.userName}}</text>
+    </view>
+  </view>
+
+  <view class="bussinessToo">
+    <button bindtap="scanCode" class="btnStyle scanCodeStyle"><image src="https://cdn.icolourful.cn/wechat/mini/merchant/scan.png"></image>扫码核销</button>
+    <button bindtap="jump" data-url="/pages/coupon/coupon"  class="btnStyle NumCodeStyle"><image src="https://cdn.icolourful.cn/wechat/mini/merchant/manual.png"></image>券码核销</button>
+  </view>
+
+</view>

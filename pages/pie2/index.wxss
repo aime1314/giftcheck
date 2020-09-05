@@ -1,0 +1,14 @@
+ec-canvas {
+  width: 95%;
+  height: 340rpx;
+  border-radius:20rpx;
+  overflow: hidden;
+}
+.piecontainer {
+  height: 340rpx;
+  position: relative;
+  width: 100%;
+}
+.myorderSize{position: absolute; width: 100rpx; left:245rpx; top: 130rpx; height: 100rpx; font-size: 24rpx; color: #999;}
+.orderNumber{display:block; text-align: center;}
+.showNumber{font-size: 34rpx; font-weight: bold; color:#333;}

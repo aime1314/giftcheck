@@ -1,0 +1,24 @@
+<import src="../../common/tabbar.wxml" />
+
+<view class="couponBox">
+  <view class="boxMode couponInput">
+    <view>
+        <view class="weui-input"><text class="couoponStyle">{{mycoupon}}</text><text wx:if="{{mycouponTipFlag}}" class="tipsStyle">{{mycouponTip}}</text><text class="clearCoupon" wx:if="{{!mycouponTipFlag}}" bindtap="clearCoupon"> </text></view>
+    </view>
+    <view bindtap="scanCode" hover-class=" "  class="sweepCode"></view>
+  </view>
+  <view class="boxMode safeKeywrod">
+    <view><button data-key="1" hover-stay-time="100" bindtap="inputCouponword">1</button></view>
+    <view><button data-key="2" hover-stay-time="100" bindtap="inputCouponword">2</button></view>
+    <view><button data-key="3" hover-stay-time="100" bindtap="inputCouponword">3</button></view>
+    <view><button data-key="4" hover-stay-time="100" bindtap="inputCouponword">4</button></view>
+    <view><button data-key="5" hover-stay-time="100" bindtap="inputCouponword">5</button></view>
+    <view><button data-key="6" hover-stay-time="100" bindtap="inputCouponword">6</button></view>
+    <view><button data-key="7" hover-stay-time="100" bindtap="inputCouponword">7</button></view>
+    <view><button data-key="8" hover-stay-time="100" bindtap="inputCouponword">8</button></view>
+    <view><button data-key="9" hover-stay-time="100" bindtap="inputCouponword">9</button></view>
+    <view><button data-key="0" hover-stay-time="100" bindtap="inputCouponword">0</button></view>
+    <view><button class="btnStyle_f60" bindtap="showcouponMsg" style="margin-top:0;">验证</button></view>
+  </view>
+</view>
+<template is="tabpageshow" data="{{tabBartype,receiptNum}}" />

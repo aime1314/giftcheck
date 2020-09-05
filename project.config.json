@@ -1,0 +1,152 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wx6c783a9ca3ded3c3",
+	"projectname": "%E5%95%86%E5%8A%A1%E9%80%9A",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "登陆",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "主页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "设置",
+					"pathName": "pages/setting/setting",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "核销详情",
+					"pathName": "pages/coupon/surecoupon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单中心",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "自主接单",
+					"pathName": "pages/receipt/receipt",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改密码",
+					"pathName": "pages/setting/password",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "核销信息确认",
+					"pathName": "pages/coupon/surecoupon",
+					"query": "verifiCode=77688367",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "自定义键盘",
+					"pathName": "pages/coupon/coupon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "日志",
+					"pathName": "pages/logs/logs",
+					"query": "verifiCode=98229856038803",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支付",
+					"pathName": "pages/webview/webview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "饼图",
+					"pathName": "pages/pie/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "饼 图",
+					"pathName": "pages/pie/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

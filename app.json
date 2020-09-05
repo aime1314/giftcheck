@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/coupon/coupon",
+    "pages/setting/setting",
+    "pages/order/order",
+    "pages/logs/logs",
+    "pages/setting/password",
+    "pages/coupon/surecoupon",
+    "pages/receipt/receipt",
+    "pages/receipt/refuse/refuse",
+    "common/nodata",
+    "pages/scan/scan",
+    "pages/webview/webview",
+    "pages/pie/index"
+  ],
+  "tabBar": {
+    "custom": false,
+    "color": "#7A7E83",
+    "selectedColor": "#FF6B00",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "核销管理",
+        "iconPath": "images/iconTab/icon_WriteOff.png",
+        "selectedIconPath": "images/iconTab/icon_WriteOff_HL.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "自主接单",
+        "iconPath": "images/iconTab/icon_Receipt.png",
+        "selectedIconPath": "images/iconTab/icon_Receipt_HL.png",
+        "pagePath": "pages/receipt/receipt"
+      },
+      {
+        "text": "订单中心",
+        "iconPath": "images/iconTab/icon_Order.png",
+        "selectedIconPath": "images/iconTab/icon_Order_HL.png",
+        "pagePath": "pages/order/order"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "客乐芙核销平台",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

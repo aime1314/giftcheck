@@ -1,0 +1,29 @@
+var DateFr = {
+
+  getDate: function (time, dateSplitStr, timeSplitStr) {
+
+    if (!time) return '';
+
+    var date = getDate(time);
+    var M = date.getMonth() + 1;
+    var y = date.getFullYear();
+    var d = date.getDate();
+
+    if (M < 10) M = "0" + M;
+    if (d < 10) d = "0" + d;
+
+    var hour = date.getHours()
+    var minute = date.getMinutes()
+    var second = date.getSeconds()
+    return y + dateSplitStr + M + dateSplitStr + d +" "+ hour + timeSplitStr + minute + timeSplitStr + second  ;
+  },
+  getTimestamp2Date: function (timestamp, dateSplitStr, timeSplitStr){
+    var date = getDate(timestamp);
+    return DateFr.getDate(date, dateSplitStr, timeSplitStr);
+  }
+}
+
+module.exports = {
+  getDate: DateFr.getDate,
+  getTimestamp2Date: DateFr.getTimestamp2Date
+}
